@@ -1,0 +1,359 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alex Morgan | Businessman</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #10243a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #f0b429;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0b429;
+        }
+
+        /* Home Section */
+        .hero {
+            min-height: 85vh;
+            background: linear-gradient(135deg, #10243a, #245b82);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #f0b429;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #f0b429;
+            color: #10243a;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        /* General Sections */
+        section:not(.hero) {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #10243a;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 17px;
+            color: #555;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card h3 {
+            color: #245b82;
+            margin-bottom: 12px;
+        }
+
+        /* Achievements */
+        .achievements {
+            background-color: white;
+            text-align: center;
+        }
+
+        .achievement-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .achievement h3 {
+            font-size: 35px;
+            color: #245b82;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #245b82;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #10243a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Alex Morgan</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hello, I'm <span>Alex Morgan</span></h1>
+
+            <p>Entrepreneur | Businessman | Investor</p>
+
+            <p>
+                Building successful businesses through vision,
+                innovation, and leadership.
+            </p>
+
+            <a href="#about" class="btn">Discover My Journey</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am a dedicated businessman and entrepreneur passionate
+            about building successful businesses and creating new
+            opportunities. My focus is on business development,
+            strategic planning, customer relationships, and innovation.
+            I believe that honesty, hard work, and teamwork are the
+            foundations of long-term success.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2 class="section-title">My Expertise</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Business Strategy</h3>
+                <p>
+                    Developing effective business plans and strategies
+                    to achieve long-term growth.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Investment</h3>
+                <p>
+                    Exploring business opportunities and supporting
+                    sustainable business development.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Leadership</h3>
+                <p>
+                    Leading teams, building partnerships, and creating
+                    a positive working environment.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements" id="achievements">
+        <h2 class="section-title">My Achievements</h2>
+
+        <div class="achievement-container">
+
+            <div class="achievement">
+                <h3>10+</h3>
+                <p>Years of Experience</p>
+            </div>
+
+            <div class="achievement">
+                <h3>25+</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="achievement">
+                <h3>100+</h3>
+                <p>Business Connections</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Let's connect and explore new opportunities.</p>
+
+        <p>
+            Email:
+            <a href="mailto:yourname@example.com">
+                yourname@example.com
+            </a>
+        </p>
+
+        <p>Phone: +91 00000 00000</p>
+
+        <p>Location: India</p>
+
+        <br>
+
+        <a href="mailto:yourname@example.com" class="btn">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Alex Morgan.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+```
